@@ -1,0 +1,4 @@
+From the Challenge Creator:
+
+It was basically just a ghostscript RCE vuln, same as the rumored one that took down 4chan recently - ghostscript (which was used for generating PDF thumbnails) had the -dNOSAFER or such flag turned on which enables all sorts of shenanigans
+You can pretty much execute any command you want by uploading a PDF, so the solve is left pretty open-ended from there. Mine was a reverse shell outright, other people used curl to send /flag.txt out to a webhook and read it, etc
